@@ -1,0 +1,23 @@
+URL
+------------------------------------------------------
+slack github link characteristics:
+    <a target="_blank" class="c-link" data-stringify-link="https://github.com/CodesmithLLC/unit-11-authentication" delay="150" data-sk="tooltip_parent" href="https://github.com/CodesmithLLC/unit-11-authentication" rel="noopener noreferrer">https://github.com/CodesmithLLC/unit-11-authentication</a>
+
+    -class: c-link
+
+urlclipping script:
+const links = document.querySelectorAll("a");
+    const array = [];
+    const base = 'github';
+
+    for (const link of links) {
+        const urlClean = link.href;
+        if (urlClean.includes(base)) array.push(urlClean);
+        
+    };
+    console.log(array);
+
+
+AUTHENTICATION
+------------------------------------------------------
+https://docs.github.com/en/rest/guides/basics-of-authentication
